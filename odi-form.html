@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oswestry Disability Index (ODI) Evaluation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+    <div class="ui container">
+        <h1 class="ui header">Oswestry Disability Index (ODI) Evaluation</h1>
+        <p><strong>Disclaimer:</strong> This tool should not be considered as a substitute for any professional medical service, nor as a substitute for clinical judgement.</p>
+        <form id="odi-form" class="ui form">
+            <div class="grouped fields">
+                <h3><strong>1. Pain Intensity:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-0" name="pain-intensity" value="0">
+                        <label for="pain-intensity-0">I can tolerate the pain I have without having to use pain killers (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-1" name="pain-intensity" value="1">
+                        <label for="pain-intensity-1">The pain is bad but I manage without taking pain killers (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-2" name="pain-intensity" value="2">
+                        <label for="pain-intensity-2">Pain killers give complete relief from pain (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-3" name="pain-intensity" value="3">
+                        <label for="pain-intensity-3">Pain killers give moderate relief from pain (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-4" name="pain-intensity" value="4">
+                        <label for="pain-intensity-4">Pain killers give very little relief from pain (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="pain-intensity-5" name="pain-intensity" value="5">
+                        <label for="pain-intensity-5">Pain killers have no effect on the pain and I do not use them (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>2. Personal Care:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-0" name="personal-care" value="0">
+                        <label for="personal-care-0">I can look after myself normally without causing extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-1" name="personal-care" value="1">
+                        <label for="personal-care-1">I can look after myself normally but it causes extra pain (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-2" name="personal-care" value="2">
+                        <label for="personal-care-2">It is painful to look after myself, and I am slow and careful (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-3" name="personal-care" value="3">
+                        <label for="personal-care-3">I need some help but manage most of my personal care (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-4" name="personal-care" value="4">
+                        <label for="personal-care-4">I need help every day in most aspects of self care (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="personal-care-5" name="personal-care" value="5">
+                        <label for="personal-care-5">I do not get dressed, wash with difficulty, and stay in bed (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>3. Lifting:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-0" name="lifting" value="0">
+                        <label for="lifting-0">I can lift heavy weights without extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-1" name="lifting" value="1">
+                        <label for="lifting-1">I can lift heavy weights but it gives extra pain (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-2" name="lifting" value="2">
+                        <label for="lifting-2">Pain prevents me from lifting heavy weights off the floor but I can manage if they are conveniently positioned for example on a table (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-3" name="lifting" value="3">
+                        <label for="lifting-3">Pain prevents me from lifting heavy weights but I can manage light to medium weights if they are conveniently positioned (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-4" name="lifting" value="4">
+                        <label for="lifting-4">I can lift only very light weights (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="lifting-5" name="lifting" value="5">
+                        <label for="lifting-5">I cannot lift or carry anything at all (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>4. Walking:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-0" name="walking" value="0">
+                        <label for="walking-0">Pain does not prevent me from walking any distance (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-1" name="walking" value="1">
+                        <label for="walking-1">Pain prevents me from walking more than 1 mile (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-2" name="walking" value="2">
+                        <label for="walking-2">Pain prevents me from walking more than 0.5 miles (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-3" name="walking" value="3">
+                        <label for="walking-3">Pain prevents me from walking more than 0.25 miles (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-4" name="walking" value="4">
+                        <label for="walking-4">I can only walk using a stick or crutches (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="walking-5" name="walking" value="5">
+                        <label for="walking-5">I am in bed most of the time and have to crawl to the toilet (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>5. Sitting:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-0" name="sitting" value="0">
+                        <label for="sitting-0">I can sit in any chair as long as I like (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-1" name="sitting" value="1">
+                        <label for="sitting-1">I can only sit in my favorite chair as long as I like (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-2" name="sitting" value="2">
+                        <label for="sitting-2">Pain prevents me from sitting more than 1 hour (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-3" name="sitting" value="3">
+                        <label for="sitting-3">Pain prevents me from sitting more than 0.5 hours (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-4" name="sitting" value="4">
+                        <label for="sitting-4">Pain prevents me from sitting more than 10 minutes (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sitting-5" name="sitting" value="5">
+                        <label for="sitting-5">Pain prevents me from sitting at all (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>6. Standing:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-0" name="standing" value="0">
+                        <label for="standing-0">I can stand as long as I want without extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-1" name="standing" value="1">
+                        <label for="standing-1">I can stand as long as I want but it gives me extra pain (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-2" name="standing" value="2">
+                        <label for="standing-2">Pain prevents me from standing for more than 1 hour (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-3" name="standing" value="3">
+                        <label for="standing-3">Pain prevents me from standing for more than 30 minutes (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-4" name="standing" value="4">
+                        <label for="standing-4">Pain prevents me from standing for more than 10 minutes (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="standing-5" name="standing" value="5">
+                        <label for="standing-5">Pain prevents me from standing at all (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>7. Sleeping:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-0" name="sleeping" value="0">
+                        <label for="sleeping-0">Pain does not prevent me from sleeping well (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-1" name="sleeping" value="1">
+                        <label for="sleeping-1">I can sleep well only by using tablets (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-2" name="sleeping" value="2">
+                        <label for="sleeping-2">Even when I take tablets, I have less than 6 hours sleep (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-3" name="sleeping" value="3">
+                        <label for="sleeping-3">Even when I take tablets, I have less than 4 hours sleep (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-4" name="sleeping" value="4">
+                        <label for="sleeping-4">Even when I take tablets, I have less than 2 hours of sleep (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sleeping-5" name="sleeping" value="5">
+                        <label for="sleeping-5">Pain prevents me from sleeping at all (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>8. Sex Life (if applicable):</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-0" name="sex-life" value="0">
+                        <label for="sex-life-0">My sex life is normal and causes no extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-1" name="sex-life" value="1">
+                        <label for="sex-life-1">My sex life is normal but causes some extra pain (1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-2" name="sex-life" value="2">
+                        <label for="sex-life-2">My sex life is nearly normal but is very painful (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-3" name="sex-life" value="3">
+                        <label for="sex-life-3">My sex life is severely restricted by pain (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-4" name="sex-life" value="4">
+                        <label for="sex-life-4">My sex life is nearly absent because of pain (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="sex-life-5" name="sex-life" value="5">
+                        <label for="sex-life-5">Pain prevents any sex life at all (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>9. Social Life:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-0" name="social-life" value="0">
+                        <label for="social-life-0">My social life is normal and gives me no extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-1" name="social-life" value="1">
+                        <label for="social-life-1">My social life is normal but increases the degree of pain (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-2" name="social-life" value="2">
+                        <label for="social-life-2">Pain has no significant effect on my social life apart from limiting energetic interests such as dancing (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-3" name="social-life" value="3">
+                        <label for="social-life-3">Pain has restricted my social life, and I do not go out as often (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-4" name="social-life" value="4">
+                        <label for="social-life-4">Pain has restricted my social life to my home (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="social-life-5" name="social-life" value="5">
+                        <label for="social-life-5">I have no social life because of pain (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <h3><strong>10. Travelling:</strong></h3>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-0" name="travelling" value="0">
+                        <label for="travelling-0">I can travel anywhere without extra pain (0 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-1" name="travelling" value="1">
+                        <label for="travelling-1">I can travel anywhere but it gives me extra pain (+1 point)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-2" name="travelling" value="2">
+                        <label for="travelling-2">Pain is bad but I manage journeys over 2 hours (+2 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-3" name="travelling" value="3">
+                        <label for="travelling-3">Pain restricts me to journeys of less than 1 hour (+3 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-4" name="travelling" value="4">
+                        <label for="travelling-4">Pain restricts me to short necessary journeys under 30 minutes (+4 points)</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="travelling-5" name="travelling" value="5">
+                        <label for="travelling-5">Pain prevents me from traveling except to the doctor or hospital (+5 points)</label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="calculate-button" class="ui primary button">Calculate</button>
+            <button type="button" id="reset-button" class="ui button">Reset</button>
+        </form>
+        <div id="odi-score-container" class="ui message">
+            <p id="odi-score">Your calculated ODI score will appear here.</p>
+            <p id="odi-interpretation"></p>
+        </div>
+        <p><strong>References:</strong> Fairbank JC, Pynsent PB. The Oswestry Disability Index. Spine 2000 Nov 15;25(22):2940-52;
+discussion 52.</p>
+    </div>
+    <!-- Include Semantic UI JavaScript (if needed) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+
+    <script>
+        const calculateButton = document.getElementById("calculate-button");
+        const resetButton = document.getElementById("reset-button");
+        const odiScore = document.getElementById("odi-score");
+        const odiInterpretation = document.getElementById("odi-interpretation");
+
+        calculateButton.addEventListener("click", () => {
+            // Calculate the ODI score based on user input and display it
+            const painIntensity = parseFloat(document.querySelector('input[name="pain-intensity"]:checked').value);
+            const personalCare = parseFloat(document.querySelector('input[name="personal-care"]:checked').value);
+            const lifting = parseFloat(document.querySelector('input[name="lifting"]:checked').value);
+            const walking = parseFloat(document.querySelector('input[name="walking"]:checked').value);
+            const sitting = parseFloat(document.querySelector('input[name="sitting"]:checked').value);
+            const standing = parseFloat(document.querySelector('input[name="standing"]:checked').value);
+            const sleeping = parseFloat(document.querySelector('input[name="sleeping"]:checked').value);
+            const sexLife = parseFloat(document.querySelector('input[name="sex-life"]:checked').value);
+            const socialLife = parseFloat(document.querySelector('input[name="social-life"]:checked').value);
+            const travelling = parseFloat(document.querySelector('input[name="travelling"]:checked').value);
+
+            // Calculate the total score by summing up the scores from all questions
+            const totalScore = (
+                painIntensity + personalCare + lifting + walking + sitting + standing + sleeping + sexLife + socialLife + travelling
+            );
+
+            const maxPossibleScore = 50;
+            const percentageScore = ((totalScore / maxPossibleScore) * 100).toFixed(0);
+
+            odiScore.innerHTML = `<p>Your ODI score: ${totalScore} (${percentageScore}%)</p>`;
+
+            // Provide an interpretation based on the score range
+            if (percentageScore >= 0 && percentageScore <= 20) {
+                odiInterpretation.innerHTML = "0% to 20% (minimal disability): Patients can cope with most activities of daily living. No treatment may be indicated except for suggestions on lifting, posture, physical fitness, and diet. Patients with sedentary occupations (e.g., secretaries) may experience more problems than others.";
+            } else if (percentageScore > 20 && percentageScore <= 40) {
+                odiInterpretation.innerHTML = "21% to 40% (moderate disability): Patients may experience more pain and problems with sitting, lifting, and standing. Travel and social life are more difficult. Patients may be off work. Personal care, sleeping, and sexual activity may not be grossly affected. Conservative treatment may be sufficient.";
+            } else if (percentageScore > 40 && percentageScore <= 60) {
+                odiInterpretation.innerHTML = "41% to 60% (severe disability): Pain is a primary problem for these patients, but they may also be experiencing significant problems in travel, personal care, social life, sexual activity, and sleep. A detailed evaluation is appropriate.";
+            } else if (percentageScore > 60 && percentageScore <= 80) {
+                odiInterpretation.innerHTML = "61% to 80% (crippled): Back pain has an impact on all aspects of daily living and work. Active treatment is required.";
+            } else if (percentageScore > 80) {
+                odiInterpretation.innerHTML = "81% to 100%: These patients may be bed-bound or exaggerating their symptoms. Careful evaluation is recommended.";
+            }
+        });
+
+        resetButton.addEventListener("click", () => {
+            // Reset the form and clear the displayed score
+            document.getElementById("odi-form").reset();
+            odiScore.innerHTML = `<p>Your calculated ODI score will appear here.</p>`;
+            odiInterpretation.innerHTML = "";
+        });
+    </script>
+</body>
+</html>
